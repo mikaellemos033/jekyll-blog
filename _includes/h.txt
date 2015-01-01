@@ -1,0 +1,22 @@
+<!--      <li><a href="{{site.url}}/">Home</a></li>  -->
+      
+<!--       {% assign pages_list = {site.pages | sort: 'order'} %}
+      {% assign group = 'navigation' %}
+      {% include pages_list.html %} -->
+      
+      
+      <!-- {% for node in pages_list %}
+ {% if group == null or group == node.group %}
+
+   {% if page.url == node.url %}
+     <li><a href="{{node.url | prepend: site.baseurl}}"></a>{{node.title}}</li> 
+   {% else %}
+     <li><a href="{{node.url | prepend: site.baseurl}}">{{node.title}}</a></li> 
+   {% endif %}
+
+ {% endif %}
+
+{% endfor %}
+
+{% assign pages_list = nil %}
+{% assign group = nil %} -->

@@ -1,0 +1,19 @@
+---
+layout: default
+title: home
+group: "navigation"
+---
+
+<section class="row">
+   <article class="col s12 m12 l8 offset-l2 ">
+     {% for poste in paginator.posts %}
+      <h4><a href="{{ poste.url | prepend: site.baseurl }}">{{ poste.title }}</a></h4>
+      <p class="flow-text">{{ poste.excerpt }}</p>
+      <p>posted {% if poste.author %} by {{poste.author}}{% endif %}{% if poste.date %} em {{poste.date | date: "%d/%m/%y"}} {% endif %}</p>
+     {% endfor %}
+     <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>         
+    <a class="waves-effect waves-teal btn-flat right">Next</a>
+    <a class="waves-effect waves-teal btn-flat">Previous</a>
+   </article>
+
+</section>
