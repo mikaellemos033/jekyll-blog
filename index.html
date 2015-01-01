@@ -14,10 +14,10 @@ group: "navigation"
      <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>         
       {% if paginator.total_pages > 1%}
         {% if paginator.next_page%}
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//','/' }}" class="waves-effect waves-teal btn-flat right">Next</a>
+        <a href="{{ paginator.next_page_path | prepend: site.url | replace: '//','/' }}" class="waves-effect waves-teal btn-flat right">Next</a>
         {% endif %}
         {% if paginator.previous_page%}
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//','/' }}" class="waves-effect waves-teal btn-flat">Previous</a>
+        <a href="{{ paginator.previous_page_path | prepend: site.url | replace: '//','/' }}" class="waves-effect waves-teal btn-flat">Previous</a>
         {% endif %}        
       {% endif %}
    </article>
