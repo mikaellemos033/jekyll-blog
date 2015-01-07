@@ -1,3 +1,1 @@
-$(document).ready(function(){
- $(".button-collapse").meu-menu({menuWidth: 240, activationWidth: 70});
-});
+ $(".button-collapse").sideNav({menuWidth: 240, activationWidth: 70});
